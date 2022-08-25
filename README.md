@@ -4,7 +4,7 @@
 
 ### Basic Information
 
-* **Persons or organization developing model**: Adeel, Eric, Estella, Swapnil
+* **Persons or organization developing model**: Adeel(Adeel@gwu.edu), Eric(Eric@gwu.edu), Estella(Estella@gwu.edu), Swapnil(Swapnil@gwu.edu)
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
@@ -52,7 +52,8 @@
 * **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
-* **Version of the modeling software**: 0.22.2.post1
+* **Version of the modeling software**: Python version: 3.7.13
+sklearn version: 1.0.2
 * **Hyperparameters or other settings of your model**: 
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
@@ -66,4 +67,16 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 #### Correlation Heatmap
 ![Correlation Heatmap](heatmap.png)
+
+### Ethical considerations:
+* **Potential negative impacts of the model**:
+  * **Math/Software Problems**: In the variable importance chart, it shows the PAY_0 variable are taking very high importance in the model. This would make the model over focus on the recent repayment behavior which will cause problems.
+  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.83 which is slightly higher than 0.8 but still relativly low.
+* **Potential uncertainties relating to the impact of using the model**:
+  * **Math/Software Problems**: Several metrics being used to calculate credit limit, the metrics importance level when calculating the credit limit can lead to bias as just having one low metric can make someones credit limit low
+  * **Real world risks**: People will be denied an increase in their credit limit and their personal life will be detrimentally impacted as it would directly affect their spending limit and budget.
+* **Other unexpected results**: 
+  * The model is within the 0.8 range but is biased
+
+
 
