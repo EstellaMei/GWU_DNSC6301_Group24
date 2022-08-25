@@ -71,7 +71,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### Ethical considerations:
 * **Potential negative impacts of the model**:
   * **Math/Software Problems**: In the variable importance chart, it shows the PAY_0 variable are taking very high importance in the model. This would make the model over focus on the recent repayment behavior which will cause problems.
-  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.83 which is slightly higher than 0.8 but still relativly low.
+  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.76 which is relativly low.
 * **Potential uncertainties relating to the impact of using the model**:
   * **Math/Software Problems**: Several metrics being used to calculate credit limit, the metrics importance level when calculating the credit limit can lead to bias as just having one low metric can make someones credit limit low
   * **Real world risks**: People will be denied an increase in their credit limit and their personal life will be detrimentally impacted as it would directly affect their spending limit and budget.
