@@ -4,7 +4,7 @@
 
 ### Basic Information
 
-* **Persons or organization developing model**: Adeel(Adeel@gwu.edu), Eric(Eric@gwu.edu), Estella(Estella@gwu.edu), Swapnil(Swapnil@gwu.edu)
+* **Persons or organization developing model**: Adeel, adeel@ai.edu, Eric, eric@gai.edu, Estella, estella@gwu.edu, Swapnil, swapnil@ai.edu
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
