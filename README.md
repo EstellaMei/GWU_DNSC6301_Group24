@@ -6,8 +6,8 @@
 
 * **Persons or organization developing model**: Adeel, `adeel@ai.edu`, Eric, `eric@newzealand.edu`, Estella, `estella@washington.edu`, Swapnil, `swapnil@washington.edu`
 * **Model date**: August, 2022
-* **Model version**: 1.0
-* **License**: MIT
+* **Model version**: 1.1
+* **License**: GWU
 * **Model implementation code**: [Group24_Project.ipynb](Group24_Project.ipynb)
 
 ### Intended Use
