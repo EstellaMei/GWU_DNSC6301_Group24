@@ -4,7 +4,7 @@
 
 ### Basic Information
 
-* **Persons or organization developing model**: Adeel, 'adeel@ai.edu', Eric, 'eric@gai.edu', Estella, 'estella@gwu.edu', Swapnil, 'swapnil@ai.edu'
+* **Persons or organization developing model**: Adeel, `adeel@ai.edu`, Eric, `eric@newzealand.edu`, Estella, `estella@washington.edu`, Swapnil, `swapnil@washington.edu`
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
