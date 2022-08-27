@@ -55,6 +55,9 @@
 * **Version of the modeling software**: Python version: 3.7.13
 sklearn version: 1.0.2
 * **Hyperparameters or other settings of your model**: 
+The cutoff of lending money is 0.12 below which the accuracy gets hampered for the given dataset.
+
+
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        max_depth=6, max_features=None, max_leaf_nodes=None,
@@ -64,6 +67,18 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        random_state=12345, splitter='best')`
 ```
 ### Quantitative Analysis
+* **Metrics used to evaluate the final model**: Confusion metrics 
+* **Final values of the metrics for all data**: 
+  * Training AUC: 0.78
+  * Validation AUC: 0.75
+  * Test AUC: 0.74 
+  * Asian-to-White AIR: 1.00
+  * Black-to-White AIR: 0.85
+  * Female-to-Male AIR: 1.00
+  * Hispanic-to-White AIR: 0.83
+
+### Plots 
+
 
 #### Correlation Heatmap
 ![Correlation Heatmap](heatmap.png)
@@ -71,12 +86,12 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### Ethical considerations:
 * **Potential negative impacts of the model**:
   * **Math/Software Problems**: In the variable importance chart, it shows the PAY_0 variable are taking very high importance in the model. This would make the model over focus on the recent repayment behavior which will cause problems.
-  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.76 which is relativly low.
+  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.83 which is greater than the 80/20 rule so the model is not affected by Adverse Impact. 
 * **Potential uncertainties relating to the impact of using the model**:
   * **Math/Software Problems**: Several metrics being used to calculate credit limit, the metrics importance level when calculating the credit limit can lead to bias as just having one low metric can make someones credit limit low
   * **Real world risks**: People will be denied an increase in their credit limit and their personal life will be detrimentally impacted as it would directly affect their spending limit and budget.
 * **Other unexpected results**: 
-  * The model is within the 0.8 range but is biased
+  * The Adverse Impact Ratio for Asian v.s. White and Female v.s. Male is 1.00 which means the Asian and White have the same accecptance rate to the credit increase. 
 
 
 
