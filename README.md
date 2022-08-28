@@ -83,7 +83,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![Correlation Heatmap](heatmap.png)
 
 #### Tree Depth vs. Training and Validation AUC
-!(tree depth vs. training and validation AUC)(Tree_depth_vs_AUC.png)
+![tree depth vs. training and validation AUC](Tree_depth_vs_AUC.png)
 
 ### Ethical considerations:
 * **Potential negative impacts of the model**:
