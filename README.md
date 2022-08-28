@@ -82,6 +82,9 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 #### Correlation Heatmap
 ![Correlation Heatmap](heatmap.png)
 
+#### Tree Depth vs. Training and Validation AUC
+!(tree depth vs. training and validation AUC)(Tree_depth_vs_AUC.png)
+
 ### Ethical considerations:
 * **Potential negative impacts of the model**:
   * **Math/Software Problems**: In the variable importance chart, it shows the PAY_0 variable are taking very high importance in the model. This would make the model over focus on the recent repayment behavior which will cause problems.
