@@ -7,8 +7,8 @@
 * **Persons or organization developing model**: Adeel, `adeel@ai.edu`, Eric, `eric@newzealand.edu`, Estella, `estella@washington.edu`, Swapnil, `swapnil@washington.edu`
 * **Model date**: August, 2022
 * **Model version**: 1.1
-* **License**: GWU
-* **Model implementation code**: [Group24_Project.ipynb](Group24_Project.ipynb)
+* **License**: MIT
+* **Model implementation code**: [Project24.ipynb](Project24.ipynb)
 
 ### Intended Use
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase. 
@@ -69,13 +69,13 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### Quantitative Analysis
 * **Metrics used to evaluate the final model**: Confusion metrics 
 * **Final values of the metrics for all data**: 
-  * Training AUC: 0.78*
-  * Validation AUC: 0.75*
+  * Training AUC: 0.87
+  * Validation AUC: 0.69
   * Test AUC: 0.74 
-  * Asian-to-White AIR: 1.00
-  * Black-to-White AIR: 0.85
+  * Asian-to-White AIR: 0.98
+  * Black-to-White AIR: 0.83
   * Female-to-Male AIR: 1.00
-  * Hispanic-to-White AIR: 0.83
+  * Hispanic-to-White AIR: 0.82
 
 ### Plots 
 
@@ -86,15 +86,21 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 #### Tree Depth vs. Training and Validation AUC
 ![tree depth vs. training and validation AUC](Tree_depth_vs_AUC.png)
 
+### Viariable Importance
+![Viariable Importance](importance.png)
+
+### Decision tree for human interpretation
+![tree](tree.png)
+
 ### Ethical considerations:
 * **Potential negative impacts of the model**:
-  * **Math/Software Problems**: In the variable importance chart, it shows the PAY_0 variable are taking very high importance in the model. This would make the model over focus on the recent repayment behavior which will cause problems.
-  * **Real world risks**: People will not be able to get their credit limit increased due to several biased decisions which is not good. And the AIR of Hispanic-to-White AIR is 0.83 which is greater than the 80/20 rule so the model is not affected by Adverse Impact. 
+  * **Math/Software Problems**: The importance chart showed that PAY_0 is a very important variable and this may cause the model to weight more on PAY_0 as making the decision.
+  * **Real world risks**: The Adverse Impact may happen to people either it is indended or accidentally. And the AIR of Hispanic-to-White AIR is 0.82 which is greater than the 80/20 rule so the model is not affected by Adverse Impact. However, the rate is not 1.00 which means the model is still biased.
 * **Potential uncertainties relating to the impact of using the model**:
-  * **Math/Software Problems**: Several metrics being used to calculate credit limit, the metrics importance level when calculating the credit limit can lead to bias as just having one low metric can make someones credit limit low
-  * **Real world risks**: People will be denied an increase in their credit limit and their personal life will be detrimentally impacted as it would directly affect their spending limit and budget.
+  * **Math/Software Problems**: There are situations when our group members getting different data from the model when we test run it different times. The software version might cause the problem. And i 
+  * **Real world risks**: The imporatnce for PAY_0 is extremely high, and the model may take that as key consideration. However, most people get their credit cards young and still learning to build credits. The consistency should be taking into account in real life.
 * **Other unexpected results**: 
-  * The Adverse Impact Ratio for Asian v.s. White and Female v.s. Male is 1.00 which means the Asian and White have the same accecptance rate to the credit increase. 
+  * The Adverse Impact Ratio for Asian v.s. White 0.98 which means the Asian and White alomst have the same accecptance rate to the credit increase. 
 
 
 
