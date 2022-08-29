@@ -86,10 +86,10 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 #### Tree Depth vs. Training and Validation AUC
 ![tree depth vs. training and validation AUC](Tree_depth_vs_AUC.png)
 
-### Viariable Importance
+#### Viariable Importance
 ![Viariable Importance](importance.png)
 
-### Decision tree for human interpretation
+#### Decision tree for human interpretation
 ![tree](tree.png)
 
 ### Ethical considerations:
