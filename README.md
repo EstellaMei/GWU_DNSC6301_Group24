@@ -8,7 +8,7 @@
 * **Model date**: August, 2022
 * **Model version**: 1.1
 * **License**: MIT
-* **Model implementation code**: [Project24.ipynb](Project24.ipynb)
+* **Model implementation code**: [Project_24.ipynb](Project_24.ipynb)
 
 ### Intended Use
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase. 
