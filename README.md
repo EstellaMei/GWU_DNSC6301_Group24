@@ -97,7 +97,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
   * **Math/Software Problems**: The importance chart showed that PAY_0 is a very important variable and this may cause the model to weight more on PAY_0 as making the decision.
   * **Real world risks**: The Adverse Impact may happen to people either it is indended or accidentally. And the AIR of Hispanic-to-White AIR is 0.82 which is greater than the 80/20 rule so the model is not affected by Adverse Impact. However, the rate is not 1.00 which means the model is still biased.
 * **Potential uncertainties relating to the impact of using the model**:
-  * **Math/Software Problems**: There are situations when our group members getting different data from the model when we test run it different times. The software version might cause the problem. And i 
+  * **Math/Software Problems**: There are situations when our group members getting different data from the model when we test run it different times. The software version might cause the problem. 
   * **Real world risks**: The imporatnce for PAY_0 is extremely high, and the model may take that as key consideration. However, most people get their credit cards young and still learning to build credits. The consistency should be taking into account in real life.
 * **Other unexpected results**: 
   * The Adverse Impact Ratio for Asian v.s. White 0.98 which means the Asian and White alomst have the same accecptance rate to the credit increase. 
